@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.Home{
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.model{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.model .leftImg{
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.model .leftImg, .model .rightImg{
+    width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.model .leftImg img, .model .rightImg img{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.glasses{
+    margin: 0 20px;
+    background-color: white;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.glass{
+    /* width: 100px; */
+    margin: 0 35px;
+    flex-basis: 10%;
+}
+
+.glass img{
+    width: 100%;
+}
+
+.info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.model .leftImg .info img{
+    width: 60%;
+    border: none;
+    transform: translateY(80px);
+    /* height: 100%; */
+}
+
+.text{
+    position: absolute;
+    left: 2px;
+    bottom: 6px;
+    padding: 0 5px;
+
+    text-align: left;
+    background-color: rgba(255, 127, 80, 0.733);
+}
+
+.text h3{
+    color: darkblue;
+}
+
+.text p{
+    color: white;
 }
